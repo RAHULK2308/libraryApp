@@ -23,7 +23,7 @@ const nav=[{
 const authors=require('./public/js/authors')
 const books=require('./public/js/books')
 
-const port=process.env.port||5000;
+const port=process.env.PORT || 5000
 
 const booksRouter=require('./src/routes/bookrouter')(nav,books);
 const authorsRouter=require('./src/routes/authorsrouter')(nav,authors);
